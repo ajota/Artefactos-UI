@@ -1,0 +1,149 @@
+@import '_variables.scss';
+
+/*general*/
+body{
+ line-height: 1.2rem;   
+}
+
+input::placeholder{
+    color: $text-muted !important;
+    font-size: $font-size-base - 0.2;
+}
+
+a:hover .btn-link:hover {
+  font-weight: bold !important;
+}
+
+/*colors*/
+.bg-secondary {
+  color: $azul-siste !important;
+}
+
+/*custom components*/
+
+.navbar{
+  background-color: transparent !important;
+}
+
+.btn.btn-secondary{ /*Azul sistecredito*/
+  color: $azul-siste;
+}
+
+.btn.btn-success{/*verde sistecredito*/
+  color: rgb(255,255,255);
+}
+
+.btn{
+  border-radius: $btn-radius-siste;
+  box-shadow: 2px 2px 6px rgba($black, .3);
+}
+
+.table th{
+  background-color: $gris-table-header;
+  color: $azul-table-heading;
+}
+
+input:not([type=submit]){
+  border: none;
+  border-bottom: solid $input-btn-border-width darken($input-disabled-bg, 15%);
+}
+input[type=radio]{
+  display:none;  
+}
+
+input[type=radio]+label:before{
+  display:inline-block;
+  content: '';
+  width: 15px;
+  height:15px;
+  border:solid 1px $primary;
+  border-radius: $btn-radius-siste;
+}
+
+input[type=radio]:checked + label:before{
+  background-color: $primary;
+}
+input[type=checkbox]:checked + label:before {
+padding-top: 3px;
+}
+
+input[type=radio]:disabled+label:before{
+  opacity: 0.5;
+}
+
+input[type=checkbox]{
+  display:none;  
+}
+
+input[type=checkbox]+label:before{
+  display:inline-block;
+  content: '';
+  width: 15px;
+  height:15px;
+  border:solid 1px $primary;
+}
+
+input[type=checkbox]:checked + label:before{
+  content: '\2713';
+  font-weight: bold;
+  color: $primary;
+  line-height: 0.5em;
+}
+
+input[type=checkbox]:disabled+label:before{
+  opacity: 0.5;
+  padding: 3px 0 0 0;
+}
+
+.breadcrumb{
+  font-style: italic;
+}
+
+.breadcrumb .active{
+  font-weight: bold;
+}
+
+.carousel-control-next-icon{
+  transform: scaleX(-1);
+}
+
+.carousel-indicators li{
+  border-radius: $btn-radius-siste;
+  border: solid $primary  $input-btn-border-width;
+  background-color: inherit;
+}
+.nav-pills .nav-link{
+  position: relative;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #eaeff5;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.nav-pills .nav-link.active{
+  font-weight:bold;  
+}
+
+.nav-pills .nav-link.active:after{
+    position: absolute;
+    display: block;
+    top: 2.4em;
+    left: 40%;
+    content: '';
+    background: #a3bd31;
+    height: 5px;
+    width: 20%;
+    border-radius: 6%/50%;
+}
+
+.form-group{
+    margin-bottom: 8% !important;
+}
+
+//helpers
+@import 'sc-helpers.scss';
+@import 'sc-secciones.scss';
+
+/*secciones*/
+

@@ -1,0 +1,51 @@
+/*helpers*/
+
+.sc-no-pad{
+    padding-left: 0;    
+    padding-top: 0;    
+    padding-bottom: 0;    
+    padding-right: 0;    
+}
+/*padding*/
+@for $inicio from 1 through 5 {
+    .sc-pad-#{$inicio}{
+        padding: #{$inicio}#{%};
+    }
+}
+/*margenes*/
+@for $inicio from 1 through 5 {
+    .sc-mrg-#{$inicio}{
+        margin: #{$inicio}#{%};
+    }
+}
+
+@for $inicio from 1 through 15 {
+    .sc-mrg-btt-#{$inicio}{
+        margin-bottom: #{$inicio}#{%};
+    }
+}
+/*alturas*/
+@for $inicio from 0 through 5 {
+    .sc-h-#{$inicio}{
+        height: #{$inicio}px;
+    }
+}
+/*alturas porcentuales*/
+@for $inicio from 1 through 20 {
+    .sc-h-#{$inicio*5}-per{
+        height: #{$inicio*5}#{%};
+    }
+}
+/*anchos porcentuales*/
+@for $inicio from 0 through 20 {
+    .sc-w-#{$inicio*5}-per{
+        width: #{$inicio*5}#{%};
+    }
+}
+
+/*tamaños texto*/
+@for $inicio from 1 through 5 {
+    .sc-txt-#{$inicio}{
+        font-size: #{($inicio+2)/4}rem;
+    }
+}

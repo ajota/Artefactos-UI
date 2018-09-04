@@ -1,0 +1,497 @@
+@charset "UTF-8";
+/*general*/
+body {
+  line-height: 1.2rem; }
+
+input::placeholder {
+  color: #d2d1d1 !important;
+  font-size: 0.8rem; }
+
+a:hover .btn-link:hover {
+  font-weight: bold !important; }
+
+/*colors*/
+.bg-secondary {
+  color: #003891 !important; }
+
+/*custom components*/
+.navbar {
+  background-color: transparent !important; }
+
+.btn.btn-secondary {
+  /*Azul sistecredito*/
+  color: #003891; }
+
+.btn.btn-success {
+  /*verde sistecredito*/
+  color: white; }
+
+.btn {
+  border-radius: 1.5em;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); }
+
+.table th {
+  background-color: #eaeff5;
+  color: #222c41; }
+
+input:not([type=submit]) {
+  border: none;
+  border-bottom: solid 1px #97add2; }
+
+input[type=radio] {
+  display: none; }
+
+input[type=radio] + label:before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: solid 1px #003891;
+  border-radius: 1.5em; }
+
+input[type=radio]:checked + label:before {
+  background-color: #003891; }
+
+input[type=checkbox]:checked + label:before {
+  padding-top: 3px; }
+
+input[type=radio]:disabled + label:before {
+  opacity: 0.5; }
+
+input[type=checkbox] {
+  display: none; }
+
+input[type=checkbox] + label:before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: solid 1px #003891; }
+
+input[type=checkbox]:checked + label:before {
+  content: '\2713';
+  font-weight: bold;
+  color: #003891;
+  line-height: 0.5em; }
+
+input[type=checkbox]:disabled + label:before {
+  opacity: 0.5;
+  padding: 3px 0 0 0; }
+
+.breadcrumb {
+  font-style: italic; }
+
+.breadcrumb .active {
+  font-weight: bold; }
+
+.carousel-control-next-icon {
+  transform: scaleX(-1); }
+
+.carousel-indicators li {
+  border-radius: 1.5em;
+  border: solid #003891 1px;
+  background-color: inherit; }
+
+.nav-pills .nav-link {
+  position: relative;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #eaeff5;
+  margin-top: 8px;
+  text-align: center; }
+
+.nav-pills .nav-link.active {
+  font-weight: bold; }
+
+.nav-pills .nav-link.active:after {
+  position: absolute;
+  display: block;
+  top: 2.4em;
+  left: 40%;
+  content: '';
+  background: #a3bd31;
+  height: 5px;
+  width: 20%;
+  border-radius: 6%/50%; }
+
+.form-group {
+  margin-bottom: 8% !important; }
+
+/*helpers*/
+.sc-no-pad {
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0; }
+
+/*padding*/
+.sc-pad-1 {
+  padding: 1%; }
+
+.sc-pad-2 {
+  padding: 2%; }
+
+.sc-pad-3 {
+  padding: 3%; }
+
+.sc-pad-4 {
+  padding: 4%; }
+
+.sc-pad-5 {
+  padding: 5%; }
+
+/*margenes*/
+.sc-mrg-1 {
+  margin: 1%; }
+
+.sc-mrg-2 {
+  margin: 2%; }
+
+.sc-mrg-3 {
+  margin: 3%; }
+
+.sc-mrg-4 {
+  margin: 4%; }
+
+.sc-mrg-5 {
+  margin: 5%; }
+
+.sc-mrg-btt-1 {
+  margin-bottom: 1%; }
+
+.sc-mrg-btt-2 {
+  margin-bottom: 2%; }
+
+.sc-mrg-btt-3 {
+  margin-bottom: 3%; }
+
+.sc-mrg-btt-4 {
+  margin-bottom: 4%; }
+
+.sc-mrg-btt-5 {
+  margin-bottom: 5%; }
+
+.sc-mrg-btt-6 {
+  margin-bottom: 6%; }
+
+.sc-mrg-btt-7 {
+  margin-bottom: 7%; }
+
+.sc-mrg-btt-8 {
+  margin-bottom: 8%; }
+
+.sc-mrg-btt-9 {
+  margin-bottom: 9%; }
+
+.sc-mrg-btt-10 {
+  margin-bottom: 10%; }
+
+.sc-mrg-btt-11 {
+  margin-bottom: 11%; }
+
+.sc-mrg-btt-12 {
+  margin-bottom: 12%; }
+
+.sc-mrg-btt-13 {
+  margin-bottom: 13%; }
+
+.sc-mrg-btt-14 {
+  margin-bottom: 14%; }
+
+.sc-mrg-btt-15 {
+  margin-bottom: 15%; }
+
+/*alturas*/
+.sc-h-0 {
+  height: 0px; }
+
+.sc-h-1 {
+  height: 1px; }
+
+.sc-h-2 {
+  height: 2px; }
+
+.sc-h-3 {
+  height: 3px; }
+
+.sc-h-4 {
+  height: 4px; }
+
+.sc-h-5 {
+  height: 5px; }
+
+/*alturas porcentuales*/
+.sc-h-5-per {
+  height: 5%; }
+
+.sc-h-10-per {
+  height: 10%; }
+
+.sc-h-15-per {
+  height: 15%; }
+
+.sc-h-20-per {
+  height: 20%; }
+
+.sc-h-25-per {
+  height: 25%; }
+
+.sc-h-30-per {
+  height: 30%; }
+
+.sc-h-35-per {
+  height: 35%; }
+
+.sc-h-40-per {
+  height: 40%; }
+
+.sc-h-45-per {
+  height: 45%; }
+
+.sc-h-50-per {
+  height: 50%; }
+
+.sc-h-55-per {
+  height: 55%; }
+
+.sc-h-60-per {
+  height: 60%; }
+
+.sc-h-65-per {
+  height: 65%; }
+
+.sc-h-70-per {
+  height: 70%; }
+
+.sc-h-75-per {
+  height: 75%; }
+
+.sc-h-80-per {
+  height: 80%; }
+
+.sc-h-85-per {
+  height: 85%; }
+
+.sc-h-90-per {
+  height: 90%; }
+
+.sc-h-95-per {
+  height: 95%; }
+
+.sc-h-100-per {
+  height: 100%; }
+
+/*anchos porcentuales*/
+.sc-w-0-per {
+  width: 0%; }
+
+.sc-w-5-per {
+  width: 5%; }
+
+.sc-w-10-per {
+  width: 10%; }
+
+.sc-w-15-per {
+  width: 15%; }
+
+.sc-w-20-per {
+  width: 20%; }
+
+.sc-w-25-per {
+  width: 25%; }
+
+.sc-w-30-per {
+  width: 30%; }
+
+.sc-w-35-per {
+  width: 35%; }
+
+.sc-w-40-per {
+  width: 40%; }
+
+.sc-w-45-per {
+  width: 45%; }
+
+.sc-w-50-per {
+  width: 50%; }
+
+.sc-w-55-per {
+  width: 55%; }
+
+.sc-w-60-per {
+  width: 60%; }
+
+.sc-w-65-per {
+  width: 65%; }
+
+.sc-w-70-per {
+  width: 70%; }
+
+.sc-w-75-per {
+  width: 75%; }
+
+.sc-w-80-per {
+  width: 80%; }
+
+.sc-w-85-per {
+  width: 85%; }
+
+.sc-w-90-per {
+  width: 90%; }
+
+.sc-w-95-per {
+  width: 95%; }
+
+.sc-w-100-per {
+  width: 100%; }
+
+/*tamaños texto*/
+.sc-txt-1 {
+  font-size: 0.75rem; }
+
+.sc-txt-2 {
+  font-size: 1rem; }
+
+.sc-txt-3 {
+  font-size: 1.25rem; }
+
+.sc-txt-4 {
+  font-size: 1.5rem; }
+
+.sc-txt-5 {
+  font-size: 1.75rem; }
+
+/*general*/
+footer div {
+  background: #dce5f4; }
+
+footer .navbar li:last-child a:after {
+  display: none; }
+
+footer .navbar a {
+  word-wrap: nowrap;
+  white-space: nowrap;
+  padding-right: 1.5rem !important; }
+  footer .navbar a:after {
+    content: '•';
+    display: inline-block;
+    width: 0;
+    font-size: 2rem;
+    line-height: 0;
+    vertical-align: sub;
+    padding-left: 1.5rem !important; }
+  footer .navbar a:hover {
+    word-spacing: 0.06rem;
+    letter-spacing: -0.03rem; }
+    footer .navbar a:hover:after {
+      font-weight: normal; }
+
+#sc-contendor-ppal {
+  overflow: hidden; }
+
+/*secciones*/
+.sc-personas {
+  background: url(../images/Bgs_Personas.png) #358d83 no-repeat;
+  background-position: 240% 100%;
+  background-size: auto 135%; }
+
+.sc-menu-ppal {
+  position: relative;
+  z-index: 2;
+  align-items: baseline; }
+  .sc-menu-ppal li {
+    padding-top: 2rem;
+    margin-left: 3rem; }
+  .sc-menu-ppal a {
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 1rem; }
+    .sc-menu-ppal a:after {
+      content: '';
+      display: inline-block;
+      background: #abe8ad;
+      height: 6px;
+      width: 0%;
+      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3); }
+    .sc-menu-ppal a:hover {
+      font-weight: 700;
+      padding-bottom: 0px;
+      padding-left: 0.32rem !important;
+      padding-right: 0.32rem !important; }
+      .sc-menu-ppal a:hover:after {
+        width: 100%;
+        transition: width 0.3s ease-in-out; }
+
+.sc-accesos {
+  background: white; }
+  .sc-accesos button {
+    font-size: 0.8rem; }
+  .sc-accesos [class^=sc-icons] {
+    width: 100px;
+    height: 105px;
+    background-position: top left;
+    background-size: 390% auto; }
+  .sc-accesos .sc-icons_04 {
+    background-position: 38% 2%; }
+  .sc-accesos .sc-icons_05 {
+    background-position: 0% 50%; }
+
+.sc-accesos, .sc-accesos + footer {
+  position: absolute;
+  bottom: 229px; }
+
+.sc-bg-gente {
+  background: url(../images/Bg_Gente.png) no-repeat center;
+  background-size: auto 100%;
+  height: 100%;
+  width: 100%; }
+
+.sc-logo-ppal {
+  background: url(../images/Sistecredito_Logo.gif) no-repeat center center;
+  background-size: 90% auto;
+  height: 20%;
+  width: 100%; }
+
+.sc-formulario .sc-icons_07 {
+  width: 75px;
+  height: 80px;
+  background-position: 35% 45%;
+  background-size: 400% auto; }
+
+.sc-form-title {
+  color: #587aa8;
+  letter-spacing: -0.03rem; }
+
+form a {
+  color: #a2a2a2;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.8rem; }
+
+.icon-input {
+  position: relative;
+  width: 0;
+  float: left; }
+  .icon-input [class^=sc-icons] {
+    width: 25px;
+    height: 25px;
+    margin: 5px 0 0 5px;
+    background-position: 44% 74%;
+    background-size: 1000%; }
+  .icon-input + input {
+    padding-left: 12%; }
+  .icon-input .sc-icons_23 {
+    background-position: 100% 17%;
+    background-size: 1400%; }
+
+/*artilugios*/
+.sc-artilugio-texto-ppal {
+  color: white;
+  line-height: 1.2rem;
+  letter-spacing: 0.04rem; }
+  .sc-artilugio-texto-ppal h1 {
+    opacity: 0.2;
+    color: #abe8ad; }
+
+/*secciones*/
