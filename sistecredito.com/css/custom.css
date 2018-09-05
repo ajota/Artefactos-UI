@@ -115,7 +115,18 @@ input[type=checkbox]:disabled + label:before {
   border-radius: 6%/50%; }
 
 .form-group {
-  margin-bottom: 8% !important; }
+  margin-bottom: 6% !important;
+  margin-top: 2% !important; }
+
+.sc-text-final {
+  color: #003891; }
+  .sc-text-final a {
+    color: #003891;
+    line-height: 0px; }
+  .sc-text-final span {
+    display: inline-block;
+    margin-top: 6px;
+    vertical-align: top; }
 
 /*helpers*/
 .sc-no-pad {
@@ -431,11 +442,14 @@ footer .navbar a {
     width: 100px;
     height: 105px;
     background-position: top left;
-    background-size: 390% auto; }
+    background-size: 385% auto;
+    margin: 0 2%; }
   .sc-accesos .sc-icons_04 {
-    background-position: 38% 2%; }
+    background-position: 38% 2%;
+    margin: 0 2% 0 8%; }
   .sc-accesos .sc-icons_05 {
-    background-position: 0% 50%; }
+    background-position: 0% 50%;
+    margin: 0 2% 0 2%; }
 
 .sc-accesos, .sc-accesos + footer {
   position: absolute;
@@ -456,12 +470,15 @@ footer .navbar a {
 .sc-formulario .sc-icons_07 {
   width: 75px;
   height: 80px;
-  background-position: 35% 45%;
+  background-position: 36% 46%;
   background-size: 400% auto; }
 
 .sc-form-title {
   color: #587aa8;
   letter-spacing: -0.03rem; }
+
+.sc-artilugio-texto-ppal p.sc-txt-3 {
+  line-height: 1.6rem; }
 
 form a {
   color: #a2a2a2;
@@ -484,6 +501,26 @@ form a {
   .icon-input .sc-icons_23 {
     background-position: 100% 17%;
     background-size: 1400%; }
+
+b.sc-app {
+  white-space: nowrap; }
+
+.sc-btns-app {
+  padding-left: 10px; }
+
+.sc-btn-GooglePlay {
+  background: url(../images/Btn_GooglePlay.png) no-repeat #003891;
+  background-size: 90%;
+  width: 45%;
+  height: 40px;
+  background-position: center; }
+
+.sc-btn-AppsStore {
+  background: url(../images/Btn_AppStore.png) no-repeat #003891;
+  background-size: 90%;
+  width: 45%;
+  height: 40px;
+  background-position: center; }
 
 /*artilugios*/
 .sc-artilugio-texto-ppal {

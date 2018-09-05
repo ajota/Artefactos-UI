@@ -87,13 +87,16 @@ footer .navbar {
         width: 100px;
         height: 105px;
         background-position: top left;
-        background-size: 390% auto;    
+        background-size: 385% auto;
+        margin: 0 2%;
     }
     .sc-icons_04{
         background-position: 38% 2%;
+        margin: 0 2% 0 8%;
     }
     .sc-icons_05{
         background-position: 0% 50%;
+        margin: 0 2% 0 2%;
     }
 }
 
@@ -122,7 +125,7 @@ footer .navbar {
     .sc-icons_07{
         width: 75px;
         height: 80px;
-        background-position: 35% 45%;
+        background-position: 36% 46%;
         background-size: 400% auto;
     }
 }
@@ -130,6 +133,10 @@ footer .navbar {
 .sc-form-title{
     color: #587aa8;
     letter-spacing: -0.03rem;
+}
+
+.sc-artilugio-texto-ppal p.sc-txt-3 {
+    line-height: 1.6rem;
 }
 
 form{
@@ -162,6 +169,28 @@ form{
     }
 }
 
+b.sc-app {
+    white-space: nowrap;
+}
+
+.sc-btns-app {
+    padding-left: 10px;
+}
+
+.sc-btn-GooglePlay {
+    background: url(../images/Btn_GooglePlay.png) no-repeat $primary;
+    background-size: 90%;
+    width: 45%;
+    height: 40px;
+    background-position: center;
+}
+.sc-btn-AppsStore {
+    background: url(../images/Btn_AppStore.png) no-repeat $primary;
+    background-size: 90%;
+    width: 45%;
+    height: 40px;
+    background-position: center;
+}
 /*artilugios*/
 .sc-artilugio-texto-ppal{
     color: $white;

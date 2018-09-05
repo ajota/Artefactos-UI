@@ -138,8 +138,22 @@ input[type=checkbox]:disabled+label:before{
 }
 
 .form-group{
-    margin-bottom: 8% !important;
+    margin-bottom: 6% !important;
+    margin-top: 2% !important;
 }
+
+.sc-text-final {
+    color: $azul-siste;
+    a {
+         color: $azul-siste;
+        line-height: 0px;}
+    span {
+        display: inline-block;
+        margin-top: 6px;
+        vertical-align: top;
+    }
+}
+
 
 //helpers
 @import 'sc-helpers.scss';
