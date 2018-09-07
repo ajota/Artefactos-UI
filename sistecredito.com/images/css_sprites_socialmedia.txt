@@ -1,0 +1,39 @@
+.bg-FacebookAzul {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-FacebookLima {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -130px -10px;
+}
+
+.bg-InstagramAzul {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -10px -130px;
+}
+
+.bg-InstagramLima {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -130px -130px;
+}
+
+.bg-LinkednAzul {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -250px -10px;
+}
+
+.bg-LinkednLima {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -250px -130px;
+}
+
+.bg-TwitterAzul {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -10px -250px;
+}
+
+.bg-TwitterLima {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -130px -250px;
+}
