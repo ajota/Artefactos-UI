@@ -1,5 +1,8 @@
 @import '_variables.scss';
 
+$space-hover: -0.02;
+$verde-linea-menu: rgb(171, 232, 173);
+
 /*general*/
 body{
  line-height: 1.2rem;   
@@ -20,18 +23,92 @@ a:hover .btn-link:hover {
 }
 
 /*custom components*/
-
 .navbar{
-  background-color: transparent !important;
+    background-color: transparent !important;
+    .navbar-nav{
+        >.nav-item{
+            position: relative;
+        }
+        .navbar-nav{
+            position: absolute;
+            top: 97%;
+            flex-direction: column;
+            visibility: hidden;
+            line-height: 0;
+            background: $white;
+            &:before{
+                position: relative;
+                display: inline-block;
+                top: 0px;
+                content: '▼';
+                text-align: center;
+                color: $verde-linea-menu;
+            }
+            .nav-item{
+                margin: 0;
+                padding: 0;
+                font-weight: normal;
+                &:after{
+                    display: none;
+                }
+                a{
+                    white-space: nowrap;
+                    color: $verde-success-siste;
+                    &:hover{
+                        word-spacing: -0.08rem;
+                        letter-spacing: -0.08rem
+                    }
+
+                }
+            }    
+        }
+        .nav-item:hover{
+            .navbar-nav{
+                visibility: visible;
+                &:before{
+                    top:5px;
+                    transition: top .3s ease .2s;
+                }
+            }
+        }
+    }
 }
 
-.btn.btn-secondary{ /*Azul sistecredito*/
-  color: $azul-siste;
+
+.nav-pills .nav-link{
+  position: relative;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #eaeff5;
+  margin-top: 8px;
+  text-align: center;
+  &.active{
+      font-weight:bold; 
+          &:after{
+            content: '';
+            position: absolute;
+            display: block;
+            top: 2.4em;
+            left: 40%;
+            background: #a3bd31;
+            height: 5px;
+            width: 20%;
+            border-radius: 6%/50%;
+        }
+   }
+}
+ 
+
+.btn{
+    &.btn-secondary{ /*Azul sistecredito*/
+        color: $azul-siste;
+    }
+    &.btn-success{/*verde sistecredito*/
+        color: rgb(255,255,255);
+    }
 }
 
-.btn.btn-success{/*verde sistecredito*/
-  color: rgb(255,255,255);
-}
+.btn
 
 .btn{
   border-radius: $btn-radius-siste;
@@ -64,7 +141,7 @@ input[type=radio]:checked + label:before{
   background-color: $primary;
 }
 input[type=checkbox]:checked + label:before {
-padding-top: 3px;
+  padding-top: 3px;
 }
 
 input[type=radio]:disabled+label:before{
@@ -112,30 +189,6 @@ input[type=checkbox]:disabled+label:before{
   border: solid $primary  $input-btn-border-width;
   background-color: inherit;
 }
-.nav-pills .nav-link{
-  position: relative;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  background-color: #eaeff5;
-  margin-top: 8px;
-  text-align: center;
-}
-
-.nav-pills .nav-link.active{
-  font-weight:bold;  
-}
-
-.nav-pills .nav-link.active:after{
-    position: absolute;
-    display: block;
-    top: 2.4em;
-    left: 40%;
-    content: '';
-    background: #a3bd31;
-    height: 5px;
-    width: 20%;
-    border-radius: 6%/50%;
-}
 
 .form-group{
     margin-bottom: 6% !important;
@@ -154,6 +207,41 @@ input[type=checkbox]:disabled+label:before{
     }
 }
 
+footer div{
+    background: $azul-footer;
+}
+
+footer .navbar {
+    .navbar-nav{
+        .navbar-nav{
+            display: none;
+        }    
+    }
+    li:last-child a:after{
+        display: none;
+    }
+    a{
+        word-wrap: nowrap;
+        white-space: nowrap;
+        padding-right: 1.5rem !important;
+        &:after{
+            content: '•';
+            display: inline-block;
+            width: 0;
+            font-size: 2rem;
+            line-height: 0;
+            vertical-align: sub;
+            padding-left: 1.5rem !important;
+        }
+        &:hover{
+            word-spacing: 0.06rem;
+            letter-spacing:-0.03rem;
+            &:after{
+                font-weight: normal;
+            }
+        }
+    } 
+}
 
 //helpers
 @import 'sc-helpers.scss';

@@ -1,37 +1,4 @@
 /*general*/
-$space-hover: 0.06;
-$letter-hover: -($space-hover/2);
-
-footer div{
-    background: $azul-footer;
-}
-
-footer .navbar {
-    li:last-child a:after{
-        display: none;
-    }
-    a{
-        word-wrap: nowrap;
-        white-space: nowrap;
-        padding-right: 1.5rem !important;
-        &:after{
-            content: '•';
-            display: inline-block;
-            width: 0;
-            font-size: 2rem;
-            line-height: 0;
-            vertical-align: sub;
-            padding-left: 1.5rem !important;
-        }
-        &:hover{
-            word-spacing: $space-hover#{rem};
-            letter-spacing: $letter-hover#{rem};
-            &:after{
-                font-weight: normal;
-            }
-        }
-    } 
-}
 #sc-contendor-ppal{
     overflow: hidden;
 }
@@ -46,35 +13,35 @@ footer .navbar {
 .sc-menu-ppal{
     position: relative;
     z-index: 2;
-    align-items: baseline;
+    align-items: normal;
     li {
         padding-top: 2rem;
         margin-left: 3rem;
-    }
-    a{
-        color: $white;
-        font-size: $h3-font-size;
         text-align: center;
         line-height: 1rem;
         &:after{
             content: '';
             display: inline-block;
-            background: rgb(171, 232, 173);
+            background: $verde-linea-menu;
             height: 6px;
             width: 0%;
             box-shadow: 2px 0px 5px rgba(0,0,0, 0.3);
         }
         &:hover{
             font-weight: $font-weight-bold;
-            padding-bottom: 0px;
-            padding-left: 0.32rem !important;
-            padding-right: 0.32rem !important;
+            padding-bottom: 0;
+            word-spacing: -0.07rem;
+            letter-spacing: -0.04rem;
             &:after{
                 width: 100%;
                 transition: width 0.3s ease-in-out;
             }
             
         }
+    }
+    a{
+        color: $white;
+        font-size: $h3-font-size;
     }
 }
 
@@ -102,23 +69,23 @@ footer .navbar {
 
 
 
-.sc-accesos, .sc-accesos+footer{
+.sc-accesos, .seccion-baja footer{
     position: absolute;
     bottom: 229px;
 }
 
 .sc-bg-gente {
-    background: url(../images/Bg_Gente.png) no-repeat center;
-    background-size: auto 100%;
+    background: url(../images/Bg_Gente.png) no-repeat center bottom;
+    background-size: 100% auto;
     height: 100%;
     width: 100%;
 }
 
 .sc-logo-ppal {
-    background: url(../images/Sistecredito_Logo.gif) no-repeat center center;
+    background-image: url(../images/Sistecredito_Logo.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: 90% auto;
-    height: 20%;
-    width: 100%;
 }
 
 .sc-formulario{

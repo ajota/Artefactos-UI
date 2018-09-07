@@ -9,7 +9,7 @@ function rendersass () {
         if(!err1){
           fs.writeFile('./css/custom.css', result.css, function(err){
             if(!err){
-             console.info('finalmente hpta!');
+             console.info('Revision y Traspilacion exitosa');
             }
           });
         }else{
@@ -20,4 +20,4 @@ function rendersass () {
 
 fs.watch('./scss/', rendersass);
 
-rendersass()
+rendersass();
