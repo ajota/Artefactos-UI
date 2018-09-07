@@ -6,10 +6,27 @@
     padding-bottom: 0;    
     padding-right: 0;    
 }
+
+.sc-no-mrg{
+    margin-left: 0;    
+    margin-top: 0;    
+    margin-bottom: 0;    
+    margin-right: 0;    
+}
+
+.sc-pos-bottom{
+    bottom: 67px !important;
+}
 /*padding*/
 @for $inicio from 1 through 5 {
     .sc-pad-#{$inicio}{
         padding: #{$inicio}#{%};
+    }
+}
+
+@for $inicio from 1 through 10 {
+    .sc-padT-#{$inicio*5}{
+        padding-top: #{$inicio*5}#{%};
     }
 }
 /*margenes*/
@@ -24,12 +41,25 @@
         margin-bottom: #{$inicio}#{%};
     }
 }
-/*alturas*/
+
+@for $inicio from 1 through 15 {
+    .sc-mrg-top-#{$inicio}{
+        margin-top: #{$inicio}#{%};
+    }
+}
+/*alturas minimas*/
 @for $inicio from 0 through 5 {
     .sc-h-#{$inicio}{
         height: #{$inicio}px;
     }
 }
+/*alturas maximas*/
+@for $inicio from 1 through 20 {
+    .sc-h-#{$inicio*10}{
+        height: #{$inicio*10}px;
+    }
+}
+
 /*alturas porcentuales*/
 @for $inicio from 1 through 20 {
     .sc-h-#{$inicio*5}-per{

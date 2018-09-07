@@ -17,6 +17,59 @@ a:hover .btn-link:hover {
 /*custom components*/
 .navbar {
   background-color: transparent !important; }
+  .navbar .navbar-nav > .nav-item {
+    position: relative; }
+  .navbar .navbar-nav .navbar-nav {
+    position: absolute;
+    top: 97%;
+    flex-direction: column;
+    visibility: hidden;
+    line-height: 0;
+    background: white; }
+    .navbar .navbar-nav .navbar-nav:before {
+      position: relative;
+      display: inline-block;
+      top: 0px;
+      content: '▼';
+      text-align: center;
+      color: #abe8ad; }
+    .navbar .navbar-nav .navbar-nav .nav-item {
+      margin: 0;
+      padding: 0;
+      font-weight: normal; }
+      .navbar .navbar-nav .navbar-nav .nav-item:after {
+        display: none; }
+      .navbar .navbar-nav .navbar-nav .nav-item a {
+        white-space: nowrap;
+        color: #a3bd31; }
+        .navbar .navbar-nav .navbar-nav .nav-item a:hover {
+          word-spacing: -0.08rem;
+          letter-spacing: -0.08rem; }
+  .navbar .navbar-nav .nav-item:hover .navbar-nav {
+    visibility: visible; }
+    .navbar .navbar-nav .nav-item:hover .navbar-nav:before {
+      top: 5px;
+      transition: top .3s ease .2s; }
+
+.nav-pills .nav-link {
+  position: relative;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #eaeff5;
+  margin-top: 8px;
+  text-align: center; }
+  .nav-pills .nav-link.active {
+    font-weight: bold; }
+    .nav-pills .nav-link.active:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 2.4em;
+      left: 40%;
+      background: #a3bd31;
+      height: 5px;
+      width: 20%;
+      border-radius: 6%/50%; }
 
 .btn.btn-secondary {
   /*Azul sistecredito*/
@@ -26,6 +79,7 @@ a:hover .btn-link:hover {
   /*verde sistecredito*/
   color: white; }
 
+.btn
 .btn {
   border-radius: 1.5em;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); }
@@ -92,28 +146,6 @@ input[type=checkbox]:disabled + label:before {
   border: solid #003891 1px;
   background-color: inherit; }
 
-.nav-pills .nav-link {
-  position: relative;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  background-color: #eaeff5;
-  margin-top: 8px;
-  text-align: center; }
-
-.nav-pills .nav-link.active {
-  font-weight: bold; }
-
-.nav-pills .nav-link.active:after {
-  position: absolute;
-  display: block;
-  top: 2.4em;
-  left: 40%;
-  content: '';
-  background: #a3bd31;
-  height: 5px;
-  width: 20%;
-  border-radius: 6%/50%; }
-
 .form-group {
   margin-bottom: 6% !important;
   margin-top: 2% !important; }
@@ -128,12 +160,48 @@ input[type=checkbox]:disabled + label:before {
     margin-top: 6px;
     vertical-align: top; }
 
+footer div {
+  background: #dce5f4; }
+
+footer .navbar .navbar-nav .navbar-nav {
+  display: none; }
+
+footer .navbar li:last-child a:after {
+  display: none; }
+
+footer .navbar a {
+  word-wrap: nowrap;
+  white-space: nowrap;
+  padding-right: 1.5rem !important; }
+  footer .navbar a:after {
+    content: '•';
+    display: inline-block;
+    width: 0;
+    font-size: 2rem;
+    line-height: 0;
+    vertical-align: sub;
+    padding-left: 1.5rem !important; }
+  footer .navbar a:hover {
+    word-spacing: 0.06rem;
+    letter-spacing: -0.03rem; }
+    footer .navbar a:hover:after {
+      font-weight: normal; }
+
 /*helpers*/
 .sc-no-pad {
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 0; }
+
+.sc-no-mrg {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0; }
+
+.sc-pos-bottom {
+  bottom: 67px !important; }
 
 /*padding*/
 .sc-pad-1 {
@@ -150,6 +218,36 @@ input[type=checkbox]:disabled + label:before {
 
 .sc-pad-5 {
   padding: 5%; }
+
+.sc-padT-5 {
+  padding-top: 5%; }
+
+.sc-padT-10 {
+  padding-top: 10%; }
+
+.sc-padT-15 {
+  padding-top: 15%; }
+
+.sc-padT-20 {
+  padding-top: 20%; }
+
+.sc-padT-25 {
+  padding-top: 25%; }
+
+.sc-padT-30 {
+  padding-top: 30%; }
+
+.sc-padT-35 {
+  padding-top: 35%; }
+
+.sc-padT-40 {
+  padding-top: 40%; }
+
+.sc-padT-45 {
+  padding-top: 45%; }
+
+.sc-padT-50 {
+  padding-top: 50%; }
 
 /*margenes*/
 .sc-mrg-1 {
@@ -212,7 +310,52 @@ input[type=checkbox]:disabled + label:before {
 .sc-mrg-btt-15 {
   margin-bottom: 15%; }
 
-/*alturas*/
+.sc-mrg-top-1 {
+  margin-top: 1%; }
+
+.sc-mrg-top-2 {
+  margin-top: 2%; }
+
+.sc-mrg-top-3 {
+  margin-top: 3%; }
+
+.sc-mrg-top-4 {
+  margin-top: 4%; }
+
+.sc-mrg-top-5 {
+  margin-top: 5%; }
+
+.sc-mrg-top-6 {
+  margin-top: 6%; }
+
+.sc-mrg-top-7 {
+  margin-top: 7%; }
+
+.sc-mrg-top-8 {
+  margin-top: 8%; }
+
+.sc-mrg-top-9 {
+  margin-top: 9%; }
+
+.sc-mrg-top-10 {
+  margin-top: 10%; }
+
+.sc-mrg-top-11 {
+  margin-top: 11%; }
+
+.sc-mrg-top-12 {
+  margin-top: 12%; }
+
+.sc-mrg-top-13 {
+  margin-top: 13%; }
+
+.sc-mrg-top-14 {
+  margin-top: 14%; }
+
+.sc-mrg-top-15 {
+  margin-top: 15%; }
+
+/*alturas minimas*/
 .sc-h-0 {
   height: 0px; }
 
@@ -230,6 +373,67 @@ input[type=checkbox]:disabled + label:before {
 
 .sc-h-5 {
   height: 5px; }
+
+/*alturas maximas*/
+.sc-h-10 {
+  height: 10px; }
+
+.sc-h-20 {
+  height: 20px; }
+
+.sc-h-30 {
+  height: 30px; }
+
+.sc-h-40 {
+  height: 40px; }
+
+.sc-h-50 {
+  height: 50px; }
+
+.sc-h-60 {
+  height: 60px; }
+
+.sc-h-70 {
+  height: 70px; }
+
+.sc-h-80 {
+  height: 80px; }
+
+.sc-h-90 {
+  height: 90px; }
+
+.sc-h-100 {
+  height: 100px; }
+
+.sc-h-110 {
+  height: 110px; }
+
+.sc-h-120 {
+  height: 120px; }
+
+.sc-h-130 {
+  height: 130px; }
+
+.sc-h-140 {
+  height: 140px; }
+
+.sc-h-150 {
+  height: 150px; }
+
+.sc-h-160 {
+  height: 160px; }
+
+.sc-h-170 {
+  height: 170px; }
+
+.sc-h-180 {
+  height: 180px; }
+
+.sc-h-190 {
+  height: 190px; }
+
+.sc-h-200 {
+  height: 200px; }
 
 /*alturas porcentuales*/
 .sc-h-5-per {
@@ -373,30 +577,6 @@ input[type=checkbox]:disabled + label:before {
   font-size: 1.75rem; }
 
 /*general*/
-footer div {
-  background: #dce5f4; }
-
-footer .navbar li:last-child a:after {
-  display: none; }
-
-footer .navbar a {
-  word-wrap: nowrap;
-  white-space: nowrap;
-  padding-right: 1.5rem !important; }
-  footer .navbar a:after {
-    content: '•';
-    display: inline-block;
-    width: 0;
-    font-size: 2rem;
-    line-height: 0;
-    vertical-align: sub;
-    padding-left: 1.5rem !important; }
-  footer .navbar a:hover {
-    word-spacing: 0.06rem;
-    letter-spacing: -0.03rem; }
-    footer .navbar a:hover:after {
-      font-weight: normal; }
-
 #sc-contendor-ppal {
   overflow: hidden; }
 
@@ -409,30 +589,30 @@ footer .navbar a {
 .sc-menu-ppal {
   position: relative;
   z-index: 2;
-  align-items: baseline; }
+  align-items: normal; }
   .sc-menu-ppal li {
     padding-top: 2rem;
-    margin-left: 3rem; }
-  .sc-menu-ppal a {
-    color: white;
-    font-size: 1.7rem;
+    margin-left: 3rem;
     text-align: center;
     line-height: 1rem; }
-    .sc-menu-ppal a:after {
+    .sc-menu-ppal li:after {
       content: '';
       display: inline-block;
       background: #abe8ad;
       height: 6px;
       width: 0%;
       box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3); }
-    .sc-menu-ppal a:hover {
+    .sc-menu-ppal li:hover {
       font-weight: 700;
-      padding-bottom: 0px;
-      padding-left: 0.32rem !important;
-      padding-right: 0.32rem !important; }
-      .sc-menu-ppal a:hover:after {
+      padding-bottom: 0;
+      word-spacing: -0.07rem;
+      letter-spacing: -0.04rem; }
+      .sc-menu-ppal li:hover:after {
         width: 100%;
         transition: width 0.3s ease-in-out; }
+  .sc-menu-ppal a {
+    color: white;
+    font-size: 1.7rem; }
 
 .sc-accesos {
   background: white; }
@@ -451,21 +631,21 @@ footer .navbar a {
     background-position: 0% 50%;
     margin: 0 2% 0 2%; }
 
-.sc-accesos, .sc-accesos + footer {
+.sc-accesos, .seccion-baja footer {
   position: absolute;
   bottom: 229px; }
 
 .sc-bg-gente {
-  background: url(../images/Bg_Gente.png) no-repeat center;
-  background-size: auto 100%;
+  background: url(../images/Bg_Gente.png) no-repeat center bottom;
+  background-size: 100% auto;
   height: 100%;
   width: 100%; }
 
 .sc-logo-ppal {
-  background: url(../images/Sistecredito_Logo.gif) no-repeat center center;
-  background-size: 90% auto;
-  height: 20%;
-  width: 100%; }
+  background-image: url(../images/Sistecredito_Logo.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90% auto; }
 
 .sc-formulario .sc-icons_07 {
   width: 75px;
