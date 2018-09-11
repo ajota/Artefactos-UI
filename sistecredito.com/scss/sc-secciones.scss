@@ -10,6 +10,12 @@
     background-size: auto 135%;
 }
 
+.sc-empresas{
+    background: url(../images/Bgs_Empresas.png) $verde-empresas no-repeat;
+    background-position:  240% 100%;
+    background-size: auto 135%;
+}
+
 .sc-menu-ppal{
     position: relative;
     z-index: 2;
@@ -68,7 +74,6 @@
 }
 
 
-
 .sc-accesos, .seccion-baja footer{
     position: absolute;
     bottom: 229px;
@@ -81,6 +86,12 @@
     width: 100%;
 }
 
+.sc-bg-Empresas {
+    background: url(../images/Bg_Empresas.png) no-repeat center bottom;
+    background-size: 100% auto;
+    height: 90%;
+    width: 100%;
+}
 .sc-logo-ppal {
     background-image: url(../images/Sistecredito_Logo.gif);
     background-repeat: no-repeat;
@@ -95,6 +106,13 @@
         padding:15% 0;
         background-position: 36% 47%;
         background-size: 400% auto;
+    }
+    .sc-icons_09{
+        width: 28% !important;
+        height: auto;
+        padding:15% 0;
+        background-position: 68% 1%;
+        background-size: 500% auto;
     }
 }
 
@@ -135,6 +153,10 @@ form{
         background-position: 100% 17%;    
         background-size: 1400%;    
     }
+}
+
+.sc-text-descripcion{
+    color:#b3f2e1;
 }
 
 b.sc-app {
