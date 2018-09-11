@@ -42,21 +42,23 @@ a:hover .btn-link:hover {
                 top: 0px;
                 content: '▼';
                 text-align: center;
-                color: $verde-linea-menu;
+                color: #AAE7AC;
             }
             .nav-item{
                 margin: 0;
                 padding: 0;
                 font-weight: normal;
-                &:after{
-                    display: none;
+                display: none;                
                 }
                 a{
                     white-space: nowrap;
-                    color: $verde-success-siste;
+                    color: #242424;
+                    font-size:1rem;
+                    background-color: #AAE7AC;
                     &:hover{
                         word-spacing: -0.08rem;
-                        letter-spacing: -0.08rem
+                        letter-spacing: -0.08rem;
+                        background-color: #AAE7AC;
                     }
 
                 }
@@ -72,7 +74,7 @@ a:hover .btn-link:hover {
             }
         }
     }
-}
+
 
 
 .nav-pills .nav-link{
@@ -102,6 +104,7 @@ a:hover .btn-link:hover {
 .btn{
     &.btn-secondary{ /*Azul sistecredito*/
         color: $azul-siste;
+        line-height: 1.2rem;
     }
     &.btn-success{/*verde sistecredito*/
         color: rgb(255,255,255);

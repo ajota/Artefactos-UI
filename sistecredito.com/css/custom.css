@@ -32,22 +32,24 @@ a:hover .btn-link:hover {
       top: 0px;
       content: '▼';
       text-align: center;
-      color: #abe8ad; }
+      color: #AAE7AC; }
     .navbar .navbar-nav .navbar-nav .nav-item {
       margin: 0;
       padding: 0;
-      font-weight: normal; }
-      .navbar .navbar-nav .navbar-nav .nav-item:after {
-        display: none; }
-      .navbar .navbar-nav .navbar-nav .nav-item a {
-        white-space: nowrap;
-        color: #a3bd31; }
-        .navbar .navbar-nav .navbar-nav .nav-item a:hover {
-          word-spacing: -0.08rem;
-          letter-spacing: -0.08rem; }
-  .navbar .navbar-nav .nav-item:hover .navbar-nav {
+      font-weight: normal;
+      display: none; }
+    .navbar .navbar-nav .navbar-nav a {
+      white-space: nowrap;
+      color: #242424;
+      font-size: 1rem;
+      background-color: #AAE7AC; }
+      .navbar .navbar-nav .navbar-nav a:hover {
+        word-spacing: -0.08rem;
+        letter-spacing: -0.08rem;
+        background-color: #AAE7AC; }
+  .navbar .nav-item:hover .navbar-nav {
     visibility: visible; }
-    .navbar .navbar-nav .nav-item:hover .navbar-nav:before {
+    .navbar .nav-item:hover .navbar-nav:before {
       top: 5px;
       transition: top .3s ease .2s; }
 
@@ -73,7 +75,8 @@ a:hover .btn-link:hover {
 
 .btn.btn-secondary {
   /*Azul sistecredito*/
-  color: #003891; }
+  color: #003891;
+  line-height: 1.2rem; }
 
 .btn.btn-success {
   /*verde sistecredito*/
@@ -586,6 +589,11 @@ footer .navbar a {
   background-position: 240% 100%;
   background-size: auto 135%; }
 
+.sc-empresas {
+  background: url(../images/Bgs_Empresas.png) #006e7d no-repeat;
+  background-position: 240% 100%;
+  background-size: auto 135%; }
+
 .sc-menu-ppal {
   position: relative;
   z-index: 2;
@@ -641,6 +649,12 @@ footer .navbar a {
   height: 100%;
   width: 100%; }
 
+.sc-bg-Empresas {
+  background: url(../images/Bg_Empresas.png) no-repeat center bottom;
+  background-size: 100% auto;
+  height: 90%;
+  width: 100%; }
+
 .sc-logo-ppal {
   background-image: url(../images/Sistecredito_Logo.gif);
   background-repeat: no-repeat;
@@ -653,6 +667,13 @@ footer .navbar a {
   padding: 15% 0;
   background-position: 36% 47%;
   background-size: 400% auto; }
+
+.sc-formulario .sc-icons_09 {
+  width: 28% !important;
+  height: auto;
+  padding: 15% 0;
+  background-position: 68% 1%;
+  background-size: 500% auto; }
 
 .sc-form-title {
   color: #587aa8;
@@ -682,6 +703,9 @@ form a {
   .icon-input .sc-icons_23 {
     background-position: 100% 17%;
     background-size: 1400%; }
+
+.sc-text-descripcion {
+  color: #b3f2e1; }
 
 b.sc-app {
   white-space: nowrap; }
