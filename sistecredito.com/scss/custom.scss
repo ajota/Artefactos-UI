@@ -32,7 +32,6 @@ a:hover .btn-link:hover {
         .navbar-nav{
             position: absolute;
             top: 97%;
-            flex-direction: column;
             visibility: hidden;
             line-height: 0;
             background: $white;
@@ -42,23 +41,25 @@ a:hover .btn-link:hover {
                 top: 0px;
                 content: '▼';
                 text-align: center;
-                color: #AAE7AC;
+                color: $verde-hover-submenu;
             }
             .nav-item{
                 margin: 0;
                 padding: 0;
                 font-weight: normal;
-                display: none;                
+                word-spacing: normal;
+                letter-spacing: normal;
+                &:after{
+                    display: none;                
                 }
                 a{
                     white-space: nowrap;
                     color: #242424;
                     font-size:1rem;
-                    background-color: #AAE7AC;
                     &:hover{
-                        word-spacing: -0.08rem;
-                        letter-spacing: -0.08rem;
-                        background-color: #AAE7AC;
+                        word-spacing: -0.04rem;
+                        letter-spacing: -0.02rem;
+                        background-color: $verde-hover-submenu;
                     }
 
                 }
@@ -74,7 +75,7 @@ a:hover .btn-link:hover {
             }
         }
     }
-
+}
 
 
 .nav-pills .nav-link{
@@ -110,8 +111,6 @@ a:hover .btn-link:hover {
         color: rgb(255,255,255);
     }
 }
-
-.btn
 
 .btn{
   border-radius: $btn-radius-siste;

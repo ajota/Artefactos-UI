@@ -31,10 +31,10 @@
            var centrar_sub = function ( item ) {
                var subTam = item.width();
                var padreSub = item.parent();
-               var padreTam = padreSub.width();
+               var padreTam = padreSub.prop('offsetWidth');
                
                var centrarA = (subTam - padreTam)/2;
-                   item.css({left: '-'+centrarA+'px'});
+                   item.css({right: '-'+centrarA+'px'});
                
            }
            
