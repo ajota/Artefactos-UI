@@ -104,13 +104,17 @@ a:hover .btn-link:hover {
 
 .btn{
     &.btn-secondary{ /*Azul sistecredito*/
-        color: $azul-siste;
-        line-height: 1.2rem;
-    }
+        color: #003891;
+        line-height: 1.3rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 4%;
+}
+   
     &.btn-success{/*verde sistecredito*/
         color: rgb(255,255,255);
     }
-}
+ }
 
 .btn{
   border-radius: $btn-radius-siste;

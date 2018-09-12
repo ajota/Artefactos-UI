@@ -77,7 +77,10 @@ a:hover .btn-link:hover {
 .btn.btn-secondary {
   /*Azul sistecredito*/
   color: #003891;
-  line-height: 1.2rem; }
+  line-height: 1.3rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 4%; }
 
 .btn.btn-success {
   /*verde sistecredito*/
@@ -594,6 +597,11 @@ footer .navbar a {
   background-position: 240% 100%;
   background-size: auto 135%; }
 
+.sc-nosotros {
+  background: url(../images/Bgs_Nosotros.png) #28a559 no-repeat;
+  background-position: 240% 100%;
+  background-size: auto 135%; }
+
 .sc-menu-ppal {
   position: relative;
   z-index: 2;
@@ -655,6 +663,12 @@ footer .navbar a {
   height: 90%;
   width: 100%; }
 
+.sc-bg-Nosotros {
+  background: url(../images/Bg_Nosotros.png) no-repeat center bottom;
+  background-size: 100% auto;
+  height: 90%;
+  width: 100%; }
+
 .sc-logo-ppal {
   background-image: url(../images/Sistecredito_Logo.gif);
   background-repeat: no-repeat;
@@ -674,6 +688,13 @@ footer .navbar a {
   padding: 15% 0;
   background-position: 68% 1%;
   background-size: 500% auto; }
+
+.sc-formulario .sc-icons_41 {
+  width: 28%;
+  height: auto;
+  padding: 15% 0;
+  background-position: 55% 74% !important;
+  background-size: 1000% auto; }
 
 .sc-form-title {
   color: #587aa8;
@@ -704,8 +725,11 @@ form a {
     background-position: 100% 17%;
     background-size: 1400%; }
 
-.sc-text-descripcion {
+.sc-text-descripcion-emp {
   color: #b3f2e1; }
+
+.sc-text-descripcion-nos {
+  color: #A4E888; }
 
 b.sc-app {
   white-space: nowrap; }
@@ -726,6 +750,11 @@ b.sc-app {
   width: 45%;
   height: 40px;
   background-position: center; }
+
+.sc-controlradio-txt {
+  color: #7E7E7E;
+  font-size: 0.8rem;
+  line-height: 0.9rem; }
 
 /*artilugios*/
 .sc-artilugio-texto-ppal {

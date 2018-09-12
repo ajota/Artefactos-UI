@@ -313,7 +313,7 @@ h4, .h4 {
   font-size: 1.5rem; }
 
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 1.2rem; }
 
 h6, .h6 {
   font-size: 1rem; }
@@ -6374,6 +6374,3 @@ input[type=checkbox]:disabled + label:before {
   width: 20%;
   border-radius: 6%/50%; }
 
- .list-unstyled{
-        margin-top: 30px!important;
-    }
