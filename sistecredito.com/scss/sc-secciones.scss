@@ -16,6 +16,12 @@
     background-size: auto 135%;
 }
 
+.sc-nosotros{
+    background: url(../images/Bgs_Nosotros.png) $verde-nosotros no-repeat;
+    background-position: 240% 100%;
+    background-size: auto 135%;
+}
+
 .sc-menu-ppal{
     position: relative;
     z-index: 2;
@@ -92,6 +98,15 @@
     height: 90%;
     width: 100%;
 }
+
+.sc-bg-Nosotros {
+    background: url(../images/Bg_Nosotros.png) no-repeat center bottom;
+    background-size: 100% auto;
+    height: 90%;
+    width: 100%;
+}
+
+
 .sc-logo-ppal {
     background-image: url(../images/Sistecredito_Logo.gif);
     background-repeat: no-repeat;
@@ -114,7 +129,15 @@
         background-position: 68% 1%;
         background-size: 500% auto;
     }
+    .sc-icons_41{
+        width: 28%;
+        height: auto;
+        padding:15% 0;
+        background-position: 55% 74% !important;
+        background-size: 1000% auto;
+    }
 }
+
 
 .sc-form-title{
     color: #587aa8;
@@ -155,9 +178,13 @@ form{
     }
 }
 
-.sc-text-descripcion{
+.sc-text-descripcion-emp{
     color:#b3f2e1;
 }
+.sc-text-descripcion-nos{
+    color: #A4E888;
+}
+
 
 b.sc-app {
     white-space: nowrap;
@@ -181,6 +208,15 @@ b.sc-app {
     height: 40px;
     background-position: center;
 }
+
+.sc-controlradio-txt {
+    color:#7E7E7E;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+}
+
+
+
 /*artilugios*/
 .sc-artilugio-texto-ppal{
     color: $white;
