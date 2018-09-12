@@ -602,6 +602,11 @@ footer .navbar a {
   background-position: 240% 100%;
   background-size: auto 135%; }
 
+.sc-contacto {
+  background: url(../images/Bgs_Contactenos.png) #00cbc2 no-repeat;
+  background-position: 240% 100%;
+  background-size: auto 135%; }
+
 .sc-menu-ppal {
   position: relative;
   z-index: 2;
@@ -669,6 +674,12 @@ footer .navbar a {
   height: 90%;
   width: 100%; }
 
+.sc-bg-Contacto {
+  background: url(../images/Bg_ContactoPersonas.png) no-repeat center bottom;
+  background-size: 80% auto;
+  height: 100%;
+  width: 100%; }
+
 .sc-logo-ppal {
   background-image: url(../images/Sistecredito_Logo.gif);
   background-repeat: no-repeat;
@@ -702,6 +713,22 @@ footer .navbar a {
 
 .sc-artilugio-texto-ppal p.sc-txt-3 {
   line-height: 1.6rem; }
+
+.sc-txt-direccion {
+  line-height: 1rem;
+  color: #0B3841; }
+
+.sc-tit-opacity {
+  color: white !important;
+  opacity: 0.2;
+  font-size: 6rem;
+  font-stretch: ultra-expanded;
+  letter-spacing: 1rem; }
+
+.sc-tit-contacto {
+  color: #CDFC00;
+  text-align: left;
+  opacity: none; }
 
 form a {
   color: #a2a2a2;
