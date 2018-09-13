@@ -672,7 +672,7 @@ footer .navbar a {
 
 .sc-bg-ContactoEmpr {
   background: url(../images/Bg_ContactoEmpresas.png) no-repeat center bottom;
-  background-size: 70% auto;
+  background-size: 90% auto;
   height: 100%;
   width: 100%; }
 
@@ -681,6 +681,12 @@ footer .navbar a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 90% auto; }
+
+.sc-logo-ppal2 {
+  background-image: url(../images/Sistecredito_Logo.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60% auto; }
 
 .sc-formulario .sc-icons_07 {
   width: 28%;
@@ -701,6 +707,41 @@ footer .navbar a {
   height: auto;
   padding: 15% 0;
   background-position: 55% 74% !important;
+  background-size: 1000% auto; }
+
+.sc-formulario .sc-icons_20 {
+  width: 28%;
+  height: auto;
+  padding: 15% 0;
+  background-position: 75% 74% !important;
+  background-size: 1000% auto; }
+
+.sc-formulario-emp .sc-icons_07 {
+  width: 20%;
+  height: auto;
+  padding: 8% 0;
+  background-position: 36% 47%;
+  background-size: 400% auto; }
+
+.sc-formulario-emp .sc-icons_09 {
+  width: 20% !important;
+  height: auto;
+  padding: 8% 0;
+  background-position: 68% 1%;
+  background-size: 500% auto; }
+
+.sc-formulario-emp .sc-icons_41 {
+  width: 20%;
+  height: auto;
+  padding: 8% 0;
+  background-position: 55% 74% !important;
+  background-size: 1000% auto; }
+
+.sc-formulario-emp .sc-icons_20 {
+  width: 20%;
+  height: auto;
+  padding: 8% 0;
+  background-position: 75% 74% !important;
   background-size: 1000% auto; }
 
 .sc-form-title {
