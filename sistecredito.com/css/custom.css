@@ -795,36 +795,57 @@ b.sc-app {
 
 .sc-redes {
   text-align: right;
-  white-space: nowrap;
   padding-right: 0;
-  height: 100%; }
-  .sc-redes div + div {
-    width: 0;
-    height: 100%;
-    padding: 0%;
-    border-radius: 150px 0 0 150px; }
-    .sc-redes div + div [class^=sc-icons-soc] {
-      padding: 10%;
-      margin: 0 1%;
-      width: auto !important;
-      height: auto !important;
-      background-size: 300% auto; }
-    .sc-redes div + div .sc-icons-soc-FacebookAzul {
-      background-position: 0 0; }
-    .sc-redes div + div .sc-icons-soc-FacebookLima, .sc-redes div + div .sc-icons-soc-FacebookAzul:hover {
-      background-position: 50% 0; }
-    .sc-redes div + div .sc-icons-soc-LinkednAzul {
-      background-position: 100% 0; }
-    .sc-redes div + div .sc-icons-soc-LinkednLima, .sc-redes div + div .sc-icons-soc-LinkednAzul:hover {
-      background-position: 100% 50%; }
-    .sc-redes div + div .sc-icons-soc-InstagramAzul {
-      background-position: 0 50%; }
-    .sc-redes div + div .sc-icons-soc-InstagramLima, .sc-redes div + div .sc-icons-soc-InstagramAzul:hover {
-      background-position: 50% 50%; }
-    .sc-redes div + div .sc-icons-soc-TwitterAzul {
-      background-position: 0 100%; }
-    .sc-redes div + div .sc-icons-soc-TwitterLima, .sc-redes div + div .sc-icons-soc-TwitterAzul:hover {
-      background-position: 50% 100%; }
+  overflow: hidden; }
+  .sc-redes div {
+    white-space: nowrap; }
+    .sc-redes div:first-child a {
+      vertical-align: middle; }
+      .sc-redes div:first-child a:after {
+        display: inline-block;
+        content: '\02039';
+        padding: 0;
+        font-size: 2rem; }
+      .sc-redes div:first-child a:hover {
+        word-spacing: -0.04rem;
+        letter-spacing: -0.02rem; }
+    .sc-redes div + div {
+      width: 8%;
+      padding: 0;
+      height: 100%;
+      border-radius: 150px 0 0 150px; }
+      .sc-redes div + div:target {
+        height: 0;
+        width: 43%;
+        padding: 3.5% 7.5% 12% 3%;
+        transition: width 0.3s ease-in;
+        margin-left: 0%; }
+        .sc-redes div + div:target [class^=sc-icons-soc] {
+          transition: margin 0.3s ease-in-out 0.1s, padding 0.3s ease-in-out 0.1s;
+          margin-top: 0%;
+          padding: 14%; }
+      .sc-redes div + div [class^=sc-icons-soc] {
+        width: 0;
+        height: 0;
+        margin-top: 15%;
+        margin-left: 0.5%;
+        background-size: 300% auto; }
+      .sc-redes div + div .sc-icons-soc-FacebookAzul {
+        background-position: 0 0; }
+      .sc-redes div + div .sc-icons-soc-FacebookLima, .sc-redes div + div .sc-icons-soc-FacebookAzul:hover {
+        background-position: 50% 0; }
+      .sc-redes div + div .sc-icons-soc-LinkednAzul {
+        background-position: 100% 0; }
+      .sc-redes div + div .sc-icons-soc-LinkednLima, .sc-redes div + div .sc-icons-soc-LinkednAzul:hover {
+        background-position: 100% 50%; }
+      .sc-redes div + div .sc-icons-soc-InstagramAzul {
+        background-position: 0 50%; }
+      .sc-redes div + div .sc-icons-soc-InstagramLima, .sc-redes div + div .sc-icons-soc-InstagramAzul:hover {
+        background-position: 50% 50%; }
+      .sc-redes div + div .sc-icons-soc-TwitterAzul {
+        background-position: 0 100%; }
+      .sc-redes div + div .sc-icons-soc-TwitterLima, .sc-redes div + div .sc-icons-soc-TwitterAzul:hover {
+        background-position: 50% 100%; }
 
 /*artilugios*/
 .sc-artilugio-texto-ppal {

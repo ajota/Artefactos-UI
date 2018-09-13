@@ -276,37 +276,64 @@ b.sc-app {
 
 .sc-redes{
     text-align: right;
-    white-space: nowrap;
     padding-right: 0;
-    height: 100%;
-    div+div{
-        width: 0;
-        height: 100%;
-        padding:0%;
-        border-radius: 150px 0 0 150px;
-        [class^=sc-icons-soc]{
-            padding: 10%;
-            margin: 0 1%;
-            width: auto!important;
-            height: auto !important;
-            background-size: 300% auto;
+    overflow: hidden;
+    div{
+        white-space: nowrap;
+        &:first-child a{
+            vertical-align: middle;
+            &:after{
+                display: inline-block;
+                content: '\02039';
+                padding: 0;
+                font-size: 2rem;
+            }
+            &:hover{
+                word-spacing: -0.04rem;
+                letter-spacing: -0.02rem;
+            }
         }
-        .sc-icons-soc-{
-            &Facebook{
-                &Azul {background-position: 0 0;}
-                &Lima, &Azul:hover{background-position: 50% 0;}
+        &+div{
+            width: 8%;
+            padding: 0;
+            height: 100%;
+            border-radius: 150px 0 0 150px;
+            &:target{
+                height: 0;
+                width: 43%;
+                padding: 3.5% 7.5% 12% 3%;
+                transition: width 0.3s ease-in;
+                margin-left: 0%;
+                [class^=sc-icons-soc]{
+                    transition: margin 0.3s ease-in-out 0.1s, padding 0.3s ease-in-out 0.1s;
+                    margin-top: 0%;
+                    padding: 14%;
+                }
             }
-            &Linkedn{
-                &Azul {background-position: 100% 0;}
-                &Lima, &Azul:hover {background-position: 100% 50%;}    
+            [class^=sc-icons-soc]{
+                width: 0;
+                height: 0;
+                margin-top: 15%;
+                margin-left:0.5%;
+                background-size: 300% auto;
             }
-            &Instagram{
-                &Azul {background-position: 0 50%;}
-                &Lima, &Azul:hover {background-position: 50% 50%;}
-            }
-            &Twitter{
-                &Azul {background-position: 0 100%;}
-                &Lima, &Azul:hover {background-position: 50% 100%;}
+            .sc-icons-soc-{
+                &Facebook{
+                    &Azul {background-position: 0 0;}
+                    &Lima, &Azul:hover{background-position: 50% 0;}
+                }
+                &Linkedn{
+                    &Azul {background-position: 100% 0;}
+                    &Lima, &Azul:hover {background-position: 100% 50%;}    
+                }
+                &Instagram{
+                    &Azul {background-position: 0 50%;}
+                    &Lima, &Azul:hover {background-position: 50% 50%;}
+                }
+                &Twitter{
+                    &Azul {background-position: 0 100%;}
+                    &Lima, &Azul:hover {background-position: 50% 100%;}
+                }
             }
         }
     }
