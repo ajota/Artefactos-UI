@@ -156,16 +156,6 @@ input[type=checkbox]:disabled + label:before {
   margin-bottom: 6% !important;
   margin-top: 2% !important; }
 
-.sc-text-final {
-  color: #003891; }
-  .sc-text-final a {
-    color: #003891;
-    line-height: 0px; }
-  .sc-text-final span {
-    display: inline-block;
-    margin-top: 6px;
-    vertical-align: top; }
-
 footer div {
   background: #dce5f4; }
 
@@ -674,9 +664,15 @@ footer .navbar a {
   height: 90%;
   width: 100%; }
 
-.sc-bg-Contacto {
+.sc-bg-ContactoPer {
   background: url(../images/Bg_ContactoPersonas.png) no-repeat center bottom;
   background-size: 80% auto;
+  height: 100%;
+  width: 100%; }
+
+.sc-bg-ContactoEmpr {
+  background: url(../images/Bg_ContactoEmpresas.png) no-repeat center bottom;
+  background-size: 70% auto;
   height: 100%;
   width: 100%; }
 
@@ -712,23 +708,27 @@ footer .navbar a {
   letter-spacing: -0.03rem; }
 
 .sc-artilugio-texto-ppal p.sc-txt-3 {
-  line-height: 1.6rem; }
+  line-height: 1.5rem; }
 
-.sc-txt-direccion {
-  line-height: 1rem;
+.sc-txt-3 .sc-txt-direccion {
   color: #0B3841; }
 
 .sc-tit-opacity {
-  color: white !important;
-  opacity: 0.2;
-  font-size: 6rem;
-  font-stretch: ultra-expanded;
-  letter-spacing: 1rem; }
-
-.sc-tit-contacto {
-  color: #CDFC00;
-  text-align: left;
-  opacity: none; }
+  position: relative;
+  color: #cdfc00;
+  font-size: 3rem;
+  top: 50%; }
+  .sc-tit-opacity:before {
+    content: attr(title);
+    position: absolute;
+    color: white;
+    opacity: 0.2;
+    font-size: 6rem;
+    font-stretch: ultra-expanded;
+    letter-spacing: 1rem;
+    font-weight: 900;
+    top: -60%;
+    left: -50%; }
 
 form a {
   color: #a2a2a2;
@@ -783,13 +783,20 @@ b.sc-app {
   font-size: 0.8rem;
   line-height: 0.9rem; }
 
+.sc-text-final {
+  color: #003891; }
+  .sc-text-final a {
+    color: #003891;
+    line-height: 0px; }
+  .sc-text-final span {
+    display: inline-block;
+    margin-top: 6px;
+    vertical-align: top; }
+
 /*artilugios*/
 .sc-artilugio-texto-ppal {
   color: white;
   line-height: 1.2rem;
   letter-spacing: 0.04rem; }
-  .sc-artilugio-texto-ppal h1 {
-    opacity: 0.2;
-    color: #abe8ad; }
 
 /*secciones*/

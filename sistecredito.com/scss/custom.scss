@@ -201,17 +201,7 @@ input[type=checkbox]:disabled+label:before{
     margin-top: 2% !important;
 }
 
-.sc-text-final {
-    color: $azul-siste;
-    a {
-         color: $azul-siste;
-        line-height: 0px;}
-    span {
-        display: inline-block;
-        margin-top: 6px;
-        vertical-align: top;
-    }
-}
+
 
 footer div{
     background: $azul-footer;
