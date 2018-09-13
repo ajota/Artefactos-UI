@@ -265,7 +265,8 @@ b.sc-app {
     color: $azul-siste;
     a {
          color: $azul-siste;
-        line-height: 0px;}
+        line-height: 0px;
+    }
     span {
         display: inline-block;
         margin-top: 6px;
@@ -273,6 +274,43 @@ b.sc-app {
     }
 }
 
+.sc-redes{
+    text-align: right;
+    white-space: nowrap;
+    padding-right: 0;
+    height: 100%;
+    div+div{
+        width: 0;
+        height: 100%;
+        padding:0%;
+        border-radius: 150px 0 0 150px;
+        [class^=sc-icons-soc]{
+            padding: 10%;
+            margin: 0 1%;
+            width: auto!important;
+            height: auto !important;
+            background-size: 300% auto;
+        }
+        .sc-icons-soc-{
+            &Facebook{
+                &Azul {background-position: 0 0;}
+                &Lima, &Azul:hover{background-position: 50% 0;}
+            }
+            &Linkedn{
+                &Azul {background-position: 100% 0;}
+                &Lima, &Azul:hover {background-position: 100% 50%;}    
+            }
+            &Instagram{
+                &Azul {background-position: 0 50%;}
+                &Lima, &Azul:hover {background-position: 50% 50%;}
+            }
+            &Twitter{
+                &Azul {background-position: 0 100%;}
+                &Lima, &Azul:hover {background-position: 50% 100%;}
+            }
+        }
+    }
+}
 /*artilugios*/
 .sc-artilugio-texto-ppal{
     color: $white;
