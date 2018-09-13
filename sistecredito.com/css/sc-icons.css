@@ -129,3 +129,47 @@
     width: 52px; height: 52px;
     background-position: -362px -409px;
 }
+
+[class^=sc-icons-soc]{
+    background: url('../images/css_sprites_socialmedia.png') no-repeat center center;
+}
+
+.sc-icons-soc-FacebookAzul {
+    width: 100px; height: 100px;
+    background-position: -10px -10px;
+}
+
+.sc-icons-soc-FacebookLima {
+    width: 100px; height: 100px;
+    background-position: -130px -10px;
+}
+
+.sc-icons-soc-InstagramAzul {
+    width: 100px; height: 100px;
+    background-position: -10px -130px;
+}
+
+.sc-icons-soc-InstagramLima {
+    width: 100px; height: 100px;
+    background-position: -130px -130px;
+}
+
+.sc-icons-soc-LinkednAzul {
+    width: 100px; height: 100px;
+    background-position: -250px -10px;
+}
+
+.sc-icons-soc-LinkednLima {
+    width: 100px; height: 100px;
+    background-position: -250px -130px;
+}
+
+.sc-icons-soc-TwitterAzul {
+    width: 100px; height: 100px;
+    background-position: -10px -250px;
+}
+
+.sc-icons-soc-TwitterLima {
+    width: 100px; height: 100px;
+    background-position: -130px -250px;
+}
