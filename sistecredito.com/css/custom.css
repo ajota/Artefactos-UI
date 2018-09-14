@@ -893,5 +893,11 @@ b.sc-app {
   color: white;
   line-height: 1.2rem;
   letter-spacing: 0.04rem; }
+  .sc-artilugio-texto-ppal h1 {
+    opacity: 0.2;
+    color: #abe8ad; }
+    .sc-artilugio-texto-ppal h1.no-op {
+      opacity: 1;
+      color: #cdfc00; }
 
 /*secciones*/
